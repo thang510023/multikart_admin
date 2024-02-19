@@ -44,10 +44,10 @@ class LoginController extends GetxController {
               Get.offAll(() => IndexLayout(scaffoldDrawerKey: scaffoldDrawerKey,scaffoldKey: scaffoldKey,));
             } else {
 
-              ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Invalid Password")));
+              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Invalid Password")));
             }
           } else {
-            ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Invalid Email or Password")));
+            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Invalid Email or Password")));
 
           }
         });

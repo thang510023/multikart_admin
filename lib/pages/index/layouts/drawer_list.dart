@@ -38,7 +38,7 @@ class DrawerList extends StatelessWidget {
                       children: [
                         SvgPicture.asset(
                           menu.value.icon,
-                          color: appCtrl.appTheme.white,
+                          colorFilter: ColorFilter.mode(appCtrl.appTheme.white, BlendMode.srcIn),
                           height: Sizes.s20,
                         ),
                         const SizedBox(width: 16 * 0.5),
@@ -91,7 +91,7 @@ class DrawerList extends StatelessWidget {
                       SvgPicture.asset(
                         menu.value.icon,
                         height: Sizes.s20,
-                        color: appCtrl.appTheme.white,
+                        colorFilter: ColorFilter.mode(appCtrl.appTheme.white, BlendMode.srcIn),
                       ),
                       const SizedBox(width: 16 * 0.5),
                       Text(menu.value.title.tr,   style: AppCss.nunitoMedium16.textColor(appCtrl.appTheme.white),),
@@ -117,7 +117,7 @@ class DrawerList extends StatelessWidget {
                           children: [
                             SvgPicture.asset(
                               childMenu.value.icon,
-                              color: appCtrl.appTheme.white,
+                              colorFilter: ColorFilter.mode(appCtrl.appTheme.white, BlendMode.srcIn),
                               height: Sizes.s20,
                             ),
                             const SizedBox(width: 16 * 0.5),

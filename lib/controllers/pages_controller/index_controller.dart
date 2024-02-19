@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:multikart_admin/pages/about_app_page/AboutApp.dart';
+import 'package:multikart_admin/pages/about_app_page/about_app.dart';
 import 'package:multikart_admin/pages/index/side_bar_menu_model.dart';
 import 'package:multikart_admin/pages/onboard_screen/onboard_screen.dart';
 import 'package:multikart_admin/pages/variant/variant.dart';

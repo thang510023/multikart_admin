@@ -63,7 +63,7 @@ class _MyAppState extends State<MyApp> {
                 return !snapshot.hasData
                     ? MediaQuery(
                         data: MediaQuery.of(context)
-                            .copyWith(textScaleFactor: 1.0),
+                            .copyWith(textScaler: const TextScaler.linear(1.0)),
                         child: widget!,
                       )
                     : Login();

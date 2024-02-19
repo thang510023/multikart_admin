@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class Responsive extends StatelessWidget {
@@ -40,10 +38,10 @@ class Responsive extends StatelessWidget {
     }
   }
 
-  static double get logicalWidth => (window.physicalSize / window.devicePixelRatio).width;
-  static double get logicalHeight => (window.physicalSize / window.devicePixelRatio).height;
-
-  static bool get isSm => logicalWidth < 850;
-  static bool get isMd => logicalWidth < 1100 && logicalWidth >= 850;
-  static bool get isLg => logicalWidth >= 1100;
+  // static double get logicalWidth => (window.physicalSize / window.devicePixelRatio).width;
+  // static double get logicalHeight => (window.physicalSize / window.devicePixelRatio).height;
+  //
+  // static bool get isSm => logicalWidth < 850;
+  // static bool get isMd => logicalWidth < 1100 && logicalWidth >= 850;
+  // static bool get isLg => logicalWidth >= 1100;
 }

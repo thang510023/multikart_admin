@@ -36,7 +36,7 @@ class MobileDrawerList extends StatelessWidget {
                   child: ListTile(
                     leading: SvgPicture.asset(
                       menu.value.icon,
-                      color: appCtrl.appTheme.white,
+                      colorFilter: ColorFilter.mode(appCtrl.appTheme.white, BlendMode.srcIn),
                       height: Sizes.s20,
                     ),
                     onTap: () => indexCtrl.drawerTap(
@@ -81,7 +81,7 @@ class MobileDrawerList extends StatelessWidget {
                   leading:SvgPicture.asset(
                     menu.value.icon,
                     height: Sizes.s20,
-                    color: appCtrl.appTheme.white,
+                    colorFilter: ColorFilter.mode(appCtrl.appTheme.white, BlendMode.srcIn),
                   ),
                   title: Container(width: Sizes.s2,),
                   children: menu.value.children
@@ -100,7 +100,7 @@ class MobileDrawerList extends StatelessWidget {
                         const EdgeInsets.symmetric(horizontal: Insets.i15),
                         title: SvgPicture.asset(
                           childMenu.value.icon,
-                          color: appCtrl.appTheme.white,
+                          colorFilter: ColorFilter.mode(appCtrl.appTheme.white, BlendMode.srcIn),
                           height: Sizes.s20,
                         ),
                         onTap: () {

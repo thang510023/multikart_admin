@@ -199,10 +199,6 @@ class AboutAppController extends GetxController {
         var image = dropImage;
         homeUploadWebImage = image;
 
-        Image image1 = Image.memory(homeUploadWebImage);
-
-        ImageInfo info = await getImageInfo(image1);
-
         homeWebImage = homeUploadWebImage;
         homePickImage = io.File("a");
         isHomeUploadFile = true;
@@ -229,7 +225,6 @@ class AboutAppController extends GetxController {
 
         Image image1 = Image.memory(homeUploadWebImage);
         log("image1 : $image1");
-        ImageInfo info = await getImageInfo(image1);
 
         homeWebImage = homeUploadWebImage;
         homePickImage = io.File(homeFile!.path);
@@ -262,8 +257,6 @@ class AboutAppController extends GetxController {
         var image = dropImage;
         drawerUploadWebImage = image;
 
-        Image image1 = Image.memory(drawerUploadWebImage);
-
         drawerWebImage = drawerUploadWebImage;
         drawerPickImage = io.File("a");
         isDrawerUploadFile = true;
@@ -291,7 +284,6 @@ class AboutAppController extends GetxController {
 
         Image image1 = Image.memory(drawerUploadWebImage);
         log("image1 : $image1");
-        ImageInfo info = await getImageInfo(image1);
 
         drawerWebImage = drawerUploadWebImage;
         drawerPickImage = io.File(drawerFile!.path);

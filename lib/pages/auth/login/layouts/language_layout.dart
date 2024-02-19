@@ -18,8 +18,11 @@ class LanguageLayout extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: Insets.i16 * 0.5),
             constraints: const BoxConstraints(minWidth: Sizes.s48),
             child: Row(children: [
-              SvgPicture.asset(svgAssets.language,
-                  height: Sizes.s25, color: appCtrl.appTheme.blackColor),
+              SvgPicture.asset(
+                svgAssets.language,
+                height: Sizes.s25,
+                colorFilter: ColorFilter.mode(appCtrl.appTheme.blackColor, BlendMode.srcIn),
+              ),
               Visibility(
                   visible: (MediaQuery.of(context).size.width > Sizes.s768),
                   child: Padding(

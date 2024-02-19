@@ -15,7 +15,7 @@ class NotificationController extends GetxController {
 
   //send notification
   Future<void> sendNotification({data}) async {
-    bool isLoginTest = appCtrl.storage.read(session.isLoginTest);
+    // bool isLoginTest = appCtrl.storage.read(session.isLoginTest);
     // if (isLoginTest) {
     //   accessDenied(fonts.modification.tr);
     // }else {

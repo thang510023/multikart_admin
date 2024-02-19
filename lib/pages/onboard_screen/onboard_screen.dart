@@ -41,7 +41,7 @@ class OnboardScreen extends StatelessWidget {
                                                 appCtrl.appTheme.darkGray)
                                             .textHeight(1.5)),
                                     const VSpace(Sizes.s15),
-                                    OnboardImage1(
+                                    const OnboardImage1(
                                       image: "",
                                     ),
                                   ],
@@ -56,7 +56,7 @@ class OnboardScreen extends StatelessWidget {
                                                 appCtrl.appTheme.darkGray)
                                             .textHeight(1.5)),
                                     const VSpace(Sizes.s15),
-                                    OnboardImage3(
+                                    const OnboardImage3(
                                       image: "",
                                     ),
                                   ],

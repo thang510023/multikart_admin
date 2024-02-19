@@ -1,6 +1,6 @@
 //app file
 
-import 'package:multikart_admin/pages/about_app_page/AboutApp.dart';
+import 'package:multikart_admin/pages/about_app_page/about_app.dart';
 import 'package:multikart_admin/pages/contact_us/contact_us.dart';
 import 'package:multikart_admin/pages/onboard_screen/onboard_screen.dart';
 import 'package:multikart_admin/pages/privacy_policy/privacy_policy.dart';

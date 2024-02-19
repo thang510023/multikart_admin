@@ -12,7 +12,7 @@ extension StyledText<T extends Text> on T {
     Locale? locale,
     bool? softWrap,
     TextOverflow? overflow,
-    double? textScaleFactor,
+    TextScaler? textScaler,
     int? maxLines,
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis, TextDecoration? textDecoration,
@@ -28,7 +28,7 @@ extension StyledText<T extends Text> on T {
         semanticsLabel: semanticsLabel ?? this.semanticsLabel,
         softWrap: softWrap ?? this.softWrap,
         textDirection: textDirection ?? this.textDirection,
-        textScaleFactor: textScaleFactor ?? this.textScaleFactor,
+        textScaler: textScaler ?? this.textScaler,
         textWidthBasis: textWidthBasis ?? this.textWidthBasis,
 
 
@@ -61,7 +61,7 @@ extension StyledText<T extends Text> on T {
         ),
       );
 
-  T textScale(double scaleFactor) => copyWith(textScaleFactor: scaleFactor);
+  T textScale(TextScaler scaleFactor) => copyWith(textScaler: scaleFactor);
 
   T bold() => copyWith(
         style: (style ?? const TextStyle()).copyWith(

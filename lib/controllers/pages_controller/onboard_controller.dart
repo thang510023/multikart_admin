@@ -200,8 +200,8 @@ class OnboardController extends GetxController {
       context,
       uploadFile,
       title}) async {
-    log("message ${source}");
-    log("message ${dropImage}");
+    log("message $source");
+    log("message $dropImage");
 
     if (dropImage != null) {
       if (onboardImageName2.contains("png") ||
@@ -209,10 +209,6 @@ class OnboardController extends GetxController {
           onboardImageName2.contains("jpeg")) {
         var image = dropImage;
         onboardUploadWebImage2 = image;
-
-        Image image1 = Image.memory(onboardUploadWebImage2);
-
-        ImageInfo info = await getImageInfo(image1);
 
         onboardWebImage2 = onboardUploadWebImage2;
         onboardPickImage2 = io.File("a");
@@ -239,7 +235,6 @@ class OnboardController extends GetxController {
 
         Image image1 = Image.memory(onboardUploadWebImage2);
         log("image1 : $image1");
-        ImageInfo info = await getImageInfo(image1);
 
         onboardWebImage2 = onboardUploadWebImage2;
         onboardPickImage2 = io.File(onboard2File!.path);
@@ -271,8 +266,6 @@ class OnboardController extends GetxController {
         var image = dropImage;
         onboard3UploadWebImage3 = image;
 
-        Image image1 = Image.memory(onboard3UploadWebImage3);
-
         onboardWebImage3 = onboard3UploadWebImage3;
         onboardPickImage3 = io.File("a");
         isOnboardUploadFile3 = true;
@@ -299,7 +292,6 @@ class OnboardController extends GetxController {
 
         Image image1 = Image.memory(onboard3UploadWebImage3);
         log("image1 : $image1");
-        ImageInfo info = await getImageInfo(image1);
 
         onboardWebImage3 = onboard3UploadWebImage3;
         onboardPickImage3 = io.File(onboard3File!.path);

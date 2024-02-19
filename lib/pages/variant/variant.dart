@@ -1,7 +1,7 @@
 import 'package:multikart_admin/config.dart';
 import 'package:multikart_admin/controllers/pages_controller/variant_controller.dart';
-import 'package:multikart_admin/pages/variant/HomeVarient.dart';
-import 'package:multikart_admin/pages/variant/productVarient.dart';
+import 'package:multikart_admin/pages/variant/home_varient.dart';
+import 'package:multikart_admin/pages/variant/product_varient.dart';
 
 class VariantScreen extends StatelessWidget {
   final onboardCtrl = Get.put(VariantController());

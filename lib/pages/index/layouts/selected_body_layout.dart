@@ -102,10 +102,10 @@ class SelectedIndexBodyLayout extends StatelessWidget {
                                       : PrivacyPolicy()
                       ]))
             ])),
-            SliverFillRemaining(
+            const SliverFillRemaining(
                 hasScrollBody: false,
                 fillOverscroll: true,
-                child: Column(children: const <Widget>[
+                child: Column(children: <Widget>[
                   Expanded(child: SizedBox.shrink())
                 ]))
           ])));
